@@ -112,19 +112,16 @@ border-color:#FEF8F5;
   border-radius: 50%;
 }
 .icon img {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+  .icon {
+  width: 30px; /* adjust size */
+  height: 30px; /* adjust size */
+  background-color: #eb5d1e;
+  mask: url('image/pet-food.png') no-repeat center;
+  -webkit-mask: url('image/pet-food.png') no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  }
 }
-.colored-icon {
-  width: 100%;
-  height: auto;
-  fill: #eb5d1e;
-}
-
    </style>
 </head>
 
@@ -196,13 +193,13 @@ border-color:#FEF8F5;
       <div class="row row-kennis">
         <div class="col-md-6 col-lg-4 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
-            <div class="icon"><img src="image/pet-food.svg" class="colored-icon" alt="Voer"></div>
+            <div class="icon"><img src="image/pet-food.png" alt="Voer"></div>
             <h4 class="title"><a href="">Donaties voer</a></h4>
             <p class="description"></p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4  align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-md-6 col-lg-4  align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><img src="image/market.png" alt="Rommelmarkt"></div>
             <h4 class="title"><a href="">Donaties rommelmarkten</a></h4>
@@ -212,7 +209,7 @@ border-color:#FEF8F5;
       </div>
 
       <div class="row row-kennis">
-        <div class="col-md-6 col-lg-4 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-md-6 col-lg-4 align-items-stretch " data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <div class="icon"><img src="image/kindness.png" alt="Financiële donaties"></div>
             <h4 class="title"><a href="">Financiële donaties</a></h4>
@@ -220,7 +217,7 @@ border-color:#FEF8F5;
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4  align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-md-6 col-lg-4  align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><img src="image/volunteer.png" alt="Vrijwilliger"></div>
             <h4 class="title"><a href="">Aanmelden als vrijwilliger</a></h4>
