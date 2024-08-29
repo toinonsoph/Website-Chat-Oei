@@ -121,20 +121,22 @@ border-color:#FEF8F5;
 
   @media only screen and (max-width: 1200px) and (min-width: 1000px) {
     #banner {
-      height: 60vh
+      height: 60vh;
+      background-size: contain;
     }
   }
 
   @media only screen and (max-width: 980px){
     #banner {
       height: 70vh; 
-      
+      background-size: contain;      
     }
   }
 
   @media only screen and (max-width: 600px) {
     #banner {
         height: 80vh;
+        background-size: contain;
     }
   }  
 
@@ -340,7 +342,9 @@ border-color:#FEF8F5;
   
           <div class="col-md-6 col-lg-4  align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><img src="image/kittens-Isla.jpg" alt="Kittens Isla" style="width: 150px; height: 150px;"></div>
+              <div class="icon">
+                <img id="popupImg" src="image/kittens-Isla.jpg" alt="Kittens Isla" style="width: 150px; height: 150px;">
+              </div>
               <p class="description">3 kittens van mama Isla: Quito, Peru en Chili</p>
             </div>
           </div>       
@@ -373,6 +377,7 @@ border-color:#FEF8F5;
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- When clicking on a picture the picture covers the whole page -->
   <!-- Modal Structure -->
   <div id="imageModal" class="modal">
     <span class="close">&times;</span>
