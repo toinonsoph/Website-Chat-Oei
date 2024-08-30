@@ -397,13 +397,13 @@ border-color:#FEF8F5;
     var images = document.getElementsByClassName('popupImg');
 
     // Loop through all images and apply the click event listener
-    images.forEach(function(image) {
-      image.onclick = function() {
+    for (var i = 0; i < images.length; i++) {
+      images[i].onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
       }
-    });
+    }
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
