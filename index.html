@@ -218,19 +218,19 @@ border-color:#FEF8F5;
 .small-img {
     display: block;
     margin: 20px auto;
-    max-width: 20%; 
-    height: auto; 
+    max-width: 100%; /* Use full container width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 @media (min-width: 768px) {
     .small-img {
-        max-width: 20%; 
+        max-width: 80%; /* Allow more space for images on medium screens */
     }
 }
 
 @media (min-width: 1200px) {
     .small-img {
-        max-width: 20%; 
+        max-width: 60%; /* Adjust image size on larger screens */
     }
 }
 
