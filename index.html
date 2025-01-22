@@ -215,17 +215,19 @@ border-color:#FEF8F5;
   border-radius: 2px;
 }
 
-/* Adjusting Icon Boxes to Make Them Taller */
+/* Adjusting Icon Boxes to Make Them Even Taller */
 .icon-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures content is spread out */
-    min-height: 700px; /* Minimum height of the boxes */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    min-height: 700px; /* Increased minimum height for longer boxes */
     padding: 20px; /* Padding inside the boxes */
     background-color: #f7f7f7; /* Light background color for boxes (optional) */
     border-radius: 10px; /* Rounded corners for the boxes (optional) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
     transition: all 0.3s ease; /* Smooth transition on hover (optional) */
+    text-align: center; /* Ensures text is centered */
 }
 
 .icon-box:hover {
@@ -238,14 +240,15 @@ border-color:#FEF8F5;
     margin-bottom: 20px; /* Space between description and image */
 }
 
-.small-img {
-    width: 30%; /* Makes images fully responsive */
+.icon-box .small-img {
+    width: 40%; /* Make image responsive and adjust width */
+    max-width: 200px; /* Limit the maximum width of the image */
     height: auto;
 }
 
 @media (max-width: 767px) {
     .icon-box {
-        min-height: 320px; /* Adjust height on mobile devices */
+        min-height: 400px; /* Adjust height on mobile devices */
     }
 
     .section-title h3 {
@@ -254,6 +257,10 @@ border-color:#FEF8F5;
 
     .icon-box .description {
         font-size: 1rem; /* Adjust description text size */
+    }
+
+    .icon-box .small-img {
+        width: 30%; /* Adjust image size on smaller screens */
     }
 }
 </style>
