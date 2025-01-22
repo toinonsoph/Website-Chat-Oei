@@ -214,14 +214,13 @@ border-color:#FEF8F5;
   margin: 10px auto 0 auto;
   border-radius: 2px;
 }
-
-/* Adjusting Icon Boxes to Make Them Even Taller */
+/* General Icon Box Styling */
 .icon-box {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
-    min-height: 700px; /* Increased minimum height for longer boxes */
+    min-height: 450px; /* Default height for larger screens */
     padding: 20px; /* Padding inside the boxes */
     background-color: #f7f7f7; /* Light background color for boxes (optional) */
     border-radius: 10px; /* Rounded corners for the boxes (optional) */
@@ -234,33 +233,61 @@ border-color:#FEF8F5;
     transform: translateY(-5px); /* Lifts the box slightly on hover (optional) */
 }
 
-/* Ensure descriptions and images are aligned properly */
+/* Description and Image Styling */
 .icon-box .description {
     flex-grow: 1; /* Allow description to grow and fill space */
     margin-bottom: 20px; /* Space between description and image */
 }
 
 .icon-box .small-img {
-    width: 40%; /* Make image responsive and adjust width */
+    width: 80%; /* Make image responsive */
     max-width: 200px; /* Limit the maximum width of the image */
     height: auto;
 }
 
+/* Media Queries for Smaller Devices (Mobile / Tablets) */
 @media (max-width: 767px) {
+    /* Adjust Icon Box height and padding for mobile */
     .icon-box {
-        min-height: 400px; /* Adjust height on mobile devices */
+        min-height: 350px; /* Adjust height for mobile */
+        padding: 15px; /* Reduce padding on smaller screens */
     }
 
     .section-title h3 {
-        font-size: 1.5rem; /* Smaller font size on mobile */
+        font-size: 1.4rem; /* Slightly smaller title for mobile */
     }
 
     .icon-box .description {
-        font-size: 1rem; /* Adjust description text size */
+        font-size: 1rem; /* Adjust font size for description */
+        margin-bottom: 10px; /* Reduce space between description and image */
+    }
+
+    /* Make the image larger on mobile screens */
+    .icon-box .small-img {
+        width: 60%; /* Image takes up more space on mobile */
+        max-width: 150px; /* Limit the maximum width of the image */
+    }
+}
+
+/* Extra Small Devices (Below 480px) */
+@media (max-width: 480px) {
+    /* Further adjust Icon Box styling for very small screens */
+    .icon-box {
+        min-height: 300px; /* Reduce height further */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .section-title h3 {
+        font-size: 1.2rem; /* Further reduce font size for small screens */
+    }
+
+    .icon-box .description {
+        font-size: 0.9rem; /* Smaller description text */
     }
 
     .icon-box .small-img {
-        width: 30%; /* Adjust image size on smaller screens */
+        width: 70%; /* Make image slightly larger for tiny screens */
+        max-width: 130px; /* Further limit image size */
     }
 }
 </style>
