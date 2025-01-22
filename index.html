@@ -215,25 +215,21 @@ border-color:#FEF8F5;
   border-radius: 2px;
 }
 
-.small-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 20%; 
-    height: auto; 
-}
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .section-title h3 {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
 
-@media (min-width: 768px) {
+    .icon-box .description {
+        font-size: 1rem; /* Adjust description text size */
+    }
+
     .small-img {
-        max-width: 20%; 
+        width: 100%;
+        height: auto;
     }
 }
-
-@media (min-width: 1200px) {
-    .small-img {
-        max-width: 20%; 
-    }
-}
-
 </style>
 </head>
 
@@ -280,20 +276,20 @@ border-color:#FEF8F5;
 
         <!-- Row 1 -->
         <div class="row row-kennis justify-content-center">
-            <div class="col-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box" style="width: 90vw; min-height: 80vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
                     <h4 class="title">1. LOKALISEREN ZWERFKATTEN</h4>
                     <p class="description">
                         Via onze facebookpagina en noodnummers berichten alerte buurtbewoners ons van 
                         nieuwe zwerfkatten in hun buurt. Via foto's en buurtonderzoek ter plaatse proberen wij de 
                         slaapplaats van de zwerfkat te lokaliseren om over te kunnen gaan naar de tweede stap.
                     </p>
-                    <img src="image/lokaliseren.jpg" alt="Lokaliseren" class="small-img">
+                    <img src="image/lokaliseren.jpg" alt="Lokaliseren" class="small-img img-fluid">
                 </div>
             </div>
 
-            <div class="col-12 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box" style="width: 90vw; min-height: 80vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                     <h4 class="title">2. VANGEN</h4>
                     <p class="description">
                         Met gespecialiseerde vangkooien wordt de zwerfkat vervolgens gevangen genomen. 
@@ -301,15 +297,15 @@ border-color:#FEF8F5;
                         vlotter en veiliger te kunnen laten verlopen. Ook worden er zwerfkatten binnengebracht die wegens 
                         ziekte of ongeval niet meer in staat zijn om te vluchten.
                     </p>
-                    <img src="image/vangkooi.jpg" alt="Vangen" class="small-img">
+                    <img src="image/vangkooi.jpg" alt="Vangen" class="small-img img-fluid">
                 </div>
             </div>
         </div>
 
         <!-- Row 2 -->
         <div class="row row-kennis justify-content-center">
-            <div class="col-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box" style="width: 90vw; min-height: 90vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
                     <h4 class="title">3. CONTROLEREN OP CHIP</h4>
                     <p class="description">
                         De gevangen zwerfkatten worden altijd gecontroleerd op de aanwezigheid van een chip daar sinds 
@@ -324,14 +320,12 @@ border-color:#FEF8F5;
                     </p>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <img src="image/controleren_chip.png" alt="Controleren chip" class="small-img">
+                    <img src="image/controleren_chip.png" alt="Controleren chip" class="small-img img-fluid">
                 </div>
             </div>
 
-            <div class="col-12 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box" style="width: 90vw; min-height: 100vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                     <h4 class="title">4. TIJDELIJK OPVANGEN + OBSERVATIE</h4>
                     <p class="description">
                         Wanneer de zwerfkat bij vangst gezond oogt en er geen dringende bezoek bij de dierenarts nodig is, 
@@ -343,16 +337,15 @@ border-color:#FEF8F5;
                         een eventuele uitbraak in onze opvang te vermijden.
                     </p>
                     <br>
-                    <br>
-                    <img src="image/tijdelijke_opvang.jpg" alt="Tijdelijke opvang" class="small-img">
+                    <img src="image/tijdelijke_opvang.jpg" alt="Tijdelijke opvang" class="small-img img-fluid">
                 </div>
             </div>
         </div>
 
         <!-- Row 3 -->
         <div class="row row-kennis justify-content-center">
-            <div class="col-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box" style="width: 90vw; min-height: 100vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
                     <h4 class="title">5. DRINGEND NAZICHT BIJ DIERENARTS</h4>
                     <p class="description">
                         Bij wondes of duidelijke symptomen van ziekte wordt er altijd eerst met de dierenarts overlegd en 
@@ -378,32 +371,27 @@ border-color:#FEF8F5;
                     </p>       
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>   
-                    <img src="image/controle_dierenarts.jpg" alt="Nazicht dierenarts" class="small-img">       
+                    <img src="image/controle_dierenarts.jpg" alt="Nazicht dierenarts" class="small-img img-fluid">       
                 </div>
             </div>
 
-            <div class="col-12 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box" style="width: 90vw; min-height: 90vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                     <h4 class="title">6. TERUGPLAATSEN</h4>
                     <p class="description">
                         Wilde zwerfkatten die niet te socialiseren zijn worden na sterilisatie teruggezet op het territorium 
                         waar ze gevangen werden met uitzondering indien het territorium te gevaarlijk is of als de kat om 
                         medische redenen moet worden opgevolgd.
                     </p>      
-                    <img src="image/terugplaatsen.jpg" alt="Terugplaatsen" class="small-img">                    
+                    <img src="image/terugplaatsen.jpg" alt="Terugplaatsen" class="small-img img-fluid">                    
                 </div>
             </div>
         </div>
 
         <!-- Row 4 -->
         <div class="row row-kennis justify-content-center">
-            <div class="col-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box" style="width: 90vw; min-height: 90vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
                     <h4 class="title">7. VOEDSEL en SCHUILHOK VOORZIEN</h4>
                     <p class="description">
                         Bij terugplaatsing op hun territorium wordt een schuilhok voorzien bestand tegen vriestemperaturen 
@@ -420,15 +408,12 @@ border-color:#FEF8F5;
                     </p>      
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <img src="image/voedsel_en_schuilhokken_voorzien.jpg" alt="Voedsel en schuilhok" class="small-img">           
+                    <img src="image/voedsel_en_schuilhokken_voorzien.jpg" alt="Voedsel en schuilhok" class="small-img img-fluid">           
                 </div>
             </div>
 
-            <div class="col-12 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box" style="width: 90vw; min-height: 130vh; padding: 40px;">
+            <div class="col-12 col-md-6 align-items-stretch ml-auto" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                     <h4 class="title">8. OPVANG</h4>
                     <p class="description">
                         Onderscheid kittens vs volwassen:
@@ -448,13 +433,7 @@ border-color:#FEF8F5;
                     </p>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <img src="image/opvang.jpg" alt="Opvang" class="small-img">
+                    <img src="image/opvang.jpg" alt="Opvang" class="small-img img-fluid">
                 </div>
             </div>
         </div>
