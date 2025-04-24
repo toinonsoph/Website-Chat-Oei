@@ -30,13 +30,28 @@
 
   <style>
     .box {
-            border: 1px solid #e76a27;;  
-            padding: 20px;          
-            margin: 20px;             
-            background-color: #e76a27;; 
-            border-radius: 8px;       
-            width: 300px;            
-    }
+    border: 1px solid #e76a27;
+    padding: 20px;
+    background-color: #e76a27;
+    border-radius: 8px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.center-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+}
 
     .icon-box {
       max-height: 220px;
@@ -334,9 +349,11 @@ border-color:#FEF8F5;
   <section id="banner" class="d-flex align-items-center" style="margin-bottom: 20px; background-image: url('image/chatoei-banner.jpg');">
   </section><!-- End Banner -->
 
-  <div class="box">
-    <h3>NOODTELEFOON</h3>
-    <p><a href="tel:+32479599060">+32 479 599 060</a></p>
+  <div class="center-box-container">
+    <div class="box">
+        <h3>NOODTELEFOON</h3>
+        <p><a href="tel:+32479599060">+32 479 599 060</a></p>
+    </div>
   </div>
 
   <!-- ======= 2 ======= -->
