@@ -29,6 +29,15 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
+    .box {
+            border: 1px solid #e76a27;;  
+            padding: 20px;          
+            margin: 20px;             
+            background-color: #e76a27;; 
+            border-radius: 8px;       
+            width: 300px;            
+    }
+
     .icon-box {
       max-height: 220px;
     }
@@ -70,7 +79,7 @@ h3 {
   justify-content: space-around;
 
  }
- /* docenten */
+
  .docenten-container {
    display: grid;
    grid-template-columns: repeat(2,220px);
@@ -325,6 +334,11 @@ border-color:#FEF8F5;
   <section id="banner" class="d-flex align-items-center" style="margin-bottom: 20px; background-image: url('image/chatoei-banner.jpg');">
   </section><!-- End Banner -->
 
+  <div class="box">
+    <h3>NOODTELEFOON</h3>
+    <p><a href="tel:+32479599060">+32 479 599 060</a></p>
+  </div>
+
   <!-- ======= 2 ======= -->
    <!-- ======= Onze werking ======= -->
    <section id="onzeWerking" class="services section-gb" style="background-color: white;">
@@ -344,7 +358,11 @@ border-color:#FEF8F5;
                         nieuwe zwerfkatten in hun buurt. Via foto's en buurtonderzoek ter plaatse proberen wij de 
                         slaapplaats van de zwerfkat te lokaliseren om over te kunnen gaan naar de tweede stap.
                     </p>
-                    <img src="image/lokaliseren.jpg" alt="Lokaliseren" class="small-img img-fluid">
+                    <picture>
+                      <source srcset="image/lokaliseren-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/lokaliseren-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/lokaliseren.jpg" alt="Lokaliseren" class="img-fluid">
+                  </picture>
                 </div>
             </div>
 
@@ -357,7 +375,11 @@ border-color:#FEF8F5;
                         vlotter en veiliger te kunnen laten verlopen. Ook worden er zwerfkatten binnengebracht die wegens 
                         ziekte of ongeval niet meer in staat zijn om te vluchten.
                     </p>
-                    <img src="image/vangkooi.jpg" alt="Vangen" class="small-img img-fluid">
+                    <picture>
+                      <source srcset="image/vangkooi-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/vangkooi-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/vangkooi.jpg" alt="Vangen" class="img-fluid">
+                  </picture>
                 </div>
             </div>
         </div>
@@ -380,7 +402,11 @@ border-color:#FEF8F5;
                     </p>
                     <br>
                     <br>
-                    <img src="image/controleren_chip.png" alt="Controleren chip" class="small-img img-fluid">
+                    <picture>
+                      <source srcset="image/controleren_chip-small.png" media="(max-width: 600px)">
+                      <source srcset="image/controleren_chip-medium.png" media="(max-width: 1200px)">
+                      <img src="image/controleren_chip.png" alt="Controleren chip" class="img-fluid">
+                  </picture>                    
                 </div>
             </div>
 
@@ -397,7 +423,11 @@ border-color:#FEF8F5;
                         een eventuele uitbraak in onze opvang te vermijden.
                     </p>
                     <br>
-                    <img src="image/tijdelijke_opvang.jpg" alt="Tijdelijke opvang" class="small-img img-fluid">
+                    <picture>
+                      <source srcset="image/tijdelijke_opvang-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/tijdelijke_opvang-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/tijdelijke_opvang.jpg" alt="Tijdelijke opvang" class="img-fluid">
+                  </picture>                    
                 </div>
             </div>
         </div>
@@ -431,7 +461,11 @@ border-color:#FEF8F5;
                     </p>       
                     <br>
                     <br>
-                    <img src="image/controle_dierenarts.jpg" alt="Nazicht dierenarts" class="small-img img-fluid">       
+                    <picture>
+                      <source srcset="image/controle_dierenarts-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/controle_dierenarts-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/controle_dierenarts.jpg" alt="Nazicht dierenarts" class="img-fluid">
+                  </picture>                   
                 </div>
             </div>
 
@@ -442,8 +476,12 @@ border-color:#FEF8F5;
                         Wilde zwerfkatten die niet te socialiseren zijn worden na sterilisatie teruggezet op het territorium 
                         waar ze gevangen werden met uitzondering indien het territorium te gevaarlijk is of als de kat om 
                         medische redenen moet worden opgevolgd.
-                    </p>      
-                    <img src="image/terugplaatsen.jpg" alt="Terugplaatsen" class="small-img img-fluid">                    
+                    </p>  
+                    <picture>
+                      <source srcset="image/terugplaatsen-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/terugplaatsen-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/terugplaatsen.jpg" alt="Terugplaatsen" class="img-fluid">
+                  </picture>                     
                 </div>
             </div>
         </div>
@@ -468,7 +506,11 @@ border-color:#FEF8F5;
                     </p>      
                     <br>
                     <br>
-                    <img src="image/voedsel_en_schuilhokken_voorzien.jpg" alt="Voedsel en schuilhok" class="small-img img-fluid">           
+                    <picture>
+                      <source srcset="image/voedsel_en_schuilhokken_voorzien-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/voedsel_en_schuilhokken_voorzien-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/voedsel_en_schuilhokken_voorzien.jpg" alt="Voedsel en schuilhok" class="img-fluid">
+                  </picture>                    
                 </div>
             </div>
 
@@ -493,7 +535,11 @@ border-color:#FEF8F5;
                     </p>
                     <br>
                     <br>
-                    <img src="image/opvang.jpg" alt="Opvang" class="small-img img-fluid">
+                    <picture>
+                      <source srcset="image/opvang-small.jpg" media="(max-width: 600px)">
+                      <source srcset="image/opvang-medium.jpg" media="(max-width: 1200px)">
+                      <img src="image/opvang.jpg" alt="Opvang" class="img-fluid">
+                  </picture>
                 </div>
             </div>
         </div>
@@ -639,8 +685,8 @@ border-color:#FEF8F5;
               Heb je tijd om te helpen socialiseren van wilde zwerfkatten in onze opvang ? 
               Wil je mee helpen op activiteiten van de vzw ? 
               Geef ons dan een seintje op 
-              <a href="tel:+32499327744">0499/32.77.44</a> of stuur een mailtje naar 
-              <a href="mailto:heidi.moke@telenet.be">heidi.moke@telenet.be</a>
+              <a href="tel:+32479599060">0479/59.90.60</a> of stuur een mailtje naar 
+              <a href="mailto:katelijne.schallier@telenet.be">katelijne.schallier@telenet.be</a>
             </p>
           </div>
         </div>
